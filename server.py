@@ -74,7 +74,7 @@ def broadcast_board():
 # Start the game server
 def start_server():
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind(('https://cn-dp0y.onrender.com', 5555))
+    server.bind(('localhost', 12345))
     server.listen(2)  # Accept up to 2 clients
 
     print("Server started. Waiting for players to connect...")
